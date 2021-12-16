@@ -1,0 +1,16 @@
+{
+  "name": "hcaptcha-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "promise-poller": "^1.9.1",
+    "puppeteer": "^13.0.0",
+    "request-promise-native": "^1.0.9"
+  }
+}
