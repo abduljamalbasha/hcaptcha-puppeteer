@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "promise-poller": "^1.9.1",
     "puppeteer": "^13.0.0",
     "request-promise-native": "^1.0.9"

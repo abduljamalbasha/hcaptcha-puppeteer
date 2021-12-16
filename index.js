@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-// const request = require("request-promise-native");
+require('dotenv').config()
 const { bypassCaptcha } = require("./captcha");
 
 const url = "http://democaptcha.com/demo-form-eng/hcaptcha.html";
@@ -7,11 +7,11 @@ if (!url) {
     throw "Please provide URL as a first argument";
 }
 async function run () {
+    
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
     const navigationPromise = page.waitForNavigation({ waitUntil: ["networkidle0"] });
     await page.goto(url);
-
     
     const value = await validateCaptcha(page)
     console.log({value})
